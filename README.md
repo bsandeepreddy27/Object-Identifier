@@ -59,8 +59,9 @@ Follow these steps to get the project running on your local machine.
 Open your terminal, navigate to where you want to store the project, and run the following commands:
 
 ```bash
-git clone https://github.com/google/generative-ai-docs.git
-cd generative-ai-docs/demos/object_identifier_js
+git clone https://github.com/bsandeepreddy27/Object-Identifier.git
+cd Object-Identifier
+
 ```
 
 ### Step 2: Configure Your API Key
