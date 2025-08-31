@@ -1,7 +1,7 @@
 
 # 🤖 AI Object Identifier
 
-An intelligent Progressive Web App (PWA) that uses your device's camera and the Google Gemini API to identify objects in real-time, provide detailed descriptions, and answer follow-up questions in a conversational format.
+An intelligent web application that uses your device's camera and the Google Gemini API to identify objects in real-time, provide detailed descriptions, and answer follow-up questions in a conversational format.
 
 <!-- Placeholder for a Live Demo link -->
 [🚀 View Live Demo](https://object-identifier-three.vercel.app/)
@@ -12,7 +12,6 @@ An intelligent Progressive Web App (PWA) that uses your device's camera and the 
 
 This application transforms your phone or laptop into a powerful visual search tool. Point your camera at an object, and the app will tell you what it is. Snap a picture to get a rich, detailed description, and then dive deeper by asking questions like "What is this made of?" or "Where does this come from?".
 
-It's built from the ground up as a modern, installable web app, meaning you get a native-app-like experience directly from your browser, complete with offline access and a home screen icon.
 
 ## ✨ Key Features
 
@@ -24,9 +23,6 @@ It's built from the ground up as a modern, installable web app, meaning you get 
   - **Flash Toggle**: Illuminate your subject in low-light conditions.
   - **Camera Switching**: Effortlessly switch between front-facing and rear-facing cameras.
   - **Digital Zoom**: Get a closer look with a smooth zoom slider.
-- **📱 Progressive Web App (PWA) Ready**:
-  - **Installable**: Add the app to your device's home screen for quick access.
-  - **Offline Capable**: The core application shell loads instantly, even without an internet connection, thanks to a service worker.
 - **🎨 Modern & Responsive UI**: Built with Tailwind CSS, the interface is sleek, intuitive, and adapts beautifully to any screen size, from mobile phones to desktops.
 - **✅ Robust Error Handling**: Provides clear, user-friendly guidance for common issues like missing API keys or denied camera permissions.
 
@@ -40,7 +36,6 @@ This project uses a modern, no-build-step setup, relying on browser-native ES Mo
 - **Styling**: **Tailwind CSS** (via CDN)
 - **Core Browser APIs**:
   - **MediaDevices API (`getUserMedia`)**: For camera access and control.
-  - **Service Worker API**: For PWA features and offline caching.
 
 ---
 
