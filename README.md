@@ -4,7 +4,7 @@
 An intelligent Progressive Web App (PWA) that uses your device's camera and the Google Gemini API to identify objects in real-time, provide detailed descriptions, and answer follow-up questions in a conversational format.
 
 <!-- Placeholder for a Live Demo link -->
-<!-- **[🚀 View Live Demo](https://your-deployment-link.com)** -->
+[🚀 View Live Demo](https://object-identifier-three.vercel.app/)
 
 ---
 
