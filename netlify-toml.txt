@@ -1,0 +1,9 @@
+# This file configures how Netlify deploys your site.
+# The following redirect rule is essential for Single Page Applications (SPAs)
+# like this one. It ensures that any direct navigation to a deep link
+# (e.g., /some/path) is correctly handled by your app's router on the client-side.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

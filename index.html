@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Identifier</title>
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#111827" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="./icon-192x192.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes focus-display {
+        0% {
+          transform: translate(-50%, -50%) scale(0.9);
+          opacity: 0;
+        }
+        10% {
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 1;
+        }
+        90% {
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1.1);
+          opacity: 0;
+        }
+      }
+      .animate-focus-display {
+        animation: focus-display 2s cubic-bezier(0, 0, 0.2, 1);
+      }
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.5s ease-out;
+      }
+      @keyframes fade-in-out {
+        0% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+        20% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        80% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        100% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+      }
+      .animate-fade-in-out {
+        animation: fade-in-out 4s ease-in-out;
+      }
+       @keyframes pulse-bright {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.7); }
+        50% { box-shadow: 0 0 0 4px rgba(168, 85, 247, 0); }
+      }
+      .animate-pulse-bright {
+        animation: pulse-bright 2s infinite;
+      }
+       @keyframes pulse-yellow {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.7); }
+        50% { box-shadow: 0 0 0 4px rgba(234, 179, 8, 0); }
+      }
+      .animate-pulse-yellow {
+        animation: pulse-yellow 2s infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900">
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          // Construct an absolute URL to sw.js from the current page's origin.
+          // This is more robust than a relative path in some sandboxed environments.
+          const swUrl = new URL('sw.js', window.location.href).href;
+          navigator.serviceWorker.register(swUrl)
+            .then(registration => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(error => {
+              console.error('Service Worker registration failed:', error);
+            });
+        });
+      }
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

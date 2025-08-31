@@ -1,0 +1,7 @@
+{
+  "name": "Object Identifier",
+  "description": "An AI-powered object identifier for on-the-go visual Q&A.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
